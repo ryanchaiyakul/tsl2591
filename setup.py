@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tsl2591",
-    version="0.0.1",
+    version="0.0.2",
     author="Ryan Chaiyakul",
     description="tsl2591 python driver for stickytoe framework",
     long_description=long_description,
@@ -18,10 +18,11 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
-    install_requires=['Adafruit-Blinka == 3.0.0',
-                      'adafruit-circuitpython-busdevice == 4.0.0',
-                      'adafruit-circuitpython-tsl2591 == 1.1.3',
-                      'Adafruit-PlatformDetect == 1.3.4',
-                      'Adafruit-PureIO == 0.2.3,',
+    install_requires=['Adafruit-Blinka==3.0.0',
+                      'adafruit-circuitpython-busdevice==4.0.0',
+                      'adafruit-circuitpython-tsl2591==1.1.3',
+                      'Adafruit-PlatformDetect==1.3.4',
+                      'Adafruit-PureIO==0.2.3',
+                      'stickytoe_device>=0.0.2',
                       ],
 )
