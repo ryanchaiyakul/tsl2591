@@ -8,7 +8,7 @@ import adafruit_tsl2591
 
 import stickytoe_device
 
-class TSL2591(stickytoe_device.I2C):
+class TSL2591(stickytoe_device.DEVICE.I2C):
 
     def execute(self, payload: str):
         cmd_dict = json.loads(payload)  # ValueError handled by caller
